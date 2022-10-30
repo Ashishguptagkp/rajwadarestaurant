@@ -1,0 +1,632 @@
+*{
+    margin: 0;
+    padding: 0;
+      
+   
+}
+body{
+    overflow:hidden;
+    overflow-y: scroll; 
+}
+
+.cross{
+    display: none;
+}
+#loader{
+    display: none;
+}
+
+
+#preloader{
+    
+    position: absolute;
+    top:20%;
+    left:32%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#preloader img{
+    width: 400px;
+    height: 400px;
+}
+
+
+.navbar ul li {
+    border: 1px solid white;
+    width: 250px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    list-style: none;
+    background-color: black;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    display: block;
+    font-weight: bold;
+    padding-top: 8px;
+    font-family: sans-serif;
+}
+.ham{
+    display: none;
+}
+
+.navbar ul li:hover {
+    background-color:green;
+    cursor: pointer;
+}
+
+
+.navbar ul ul {
+    display: none;
+    flex-wrap: wrap;
+    position: relative;
+    padding-top: 8px;
+    z-index: 1;
+ 
+ 
+}
+.navbar ul li:hover>ul {
+    display: block;
+    position: absolute;
+     
+}
+.banner{
+    float: left;
+    
+    
+    width: 8160px;
+    background-size: cover;
+    /* height: 200px; */
+    position: relative;
+   animation: slide 20s linear infinite; 
+}
+.banner img{
+    width: 1276px;
+    height: 500px;
+}
+
+@keyframes slide {
+    0%{
+        left: -1280px;
+    }
+
+    20%{
+        left: -1280px
+    }
+
+    25%{
+        left: -2560px;
+    }
+
+    30%{
+        left:-2560px;
+    }
+    35%{
+        left: -3840px;
+    }
+    45%{
+        left: -3840px;
+    }
+    55%{
+        left: -5120px;
+    }
+    65%{
+        left: -5120px;
+    }
+    75%{
+        left: -6400px;
+    }
+    85%{
+        left: -6400px;
+    }
+    90%{
+        left: -7680px;
+    }
+    95%{
+        left:-7680px;
+    }
+    100%{
+        left:-8960px;
+    }
+}
+
+.cards{
+    
+    height: 200px;
+    width:96%;
+    position:absolute;
+    top:600px;
+    left: 20px;
+    
+    transition: transform 2s;
+    text-align: center;
+
+}
+
+.items-card{
+    float: left;
+    height: 200px;
+    width:300px;
+    margin: 35px 50px;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 8px;
+    transition: transform 1s;
+}
+
+.items-card img{
+    border: 1px solid black;
+    border-radius: 5px;   
+}
+
+
+.items-card:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 6px 7px gray;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.7);
+     height: 300px;
+    width: 100%;
+    position:relative;
+    top:400px;
+    display: flex;
+   
+    
+}
+.home{
+    width: 20%;
+     justify-content: center;
+    align-items: center;
+    text-align:center;
+    
+    font-size: 15px;
+   
+    padding-top: 15px;
+}
+
+.home h2{
+    color: white;
+}
+
+.home li {
+    padding: 10px 10px;
+   list-style: none;
+}
+.home li a{
+   
+    color: white;
+    font-weight: bold;
+    
+}
+
+
+.about {
+    width: 30%;
+    justify-content: center;
+    color: white;
+    padding-top: 15px;
+}
+
+  .address {
+    
+    justify-content: center;
+    text-align: center;
+    color: white;
+    width: 20%;
+    padding-top: 15px;
+}   
+
+
+.map {
+    border: 1px solid red;
+   position: relative;
+   top:26px;
+ width:350px;
+    height: 250px;
+
+}
+
+
+
+.para{
+    text-align: justify;
+    position: relative;
+    top:70px;  
+}
+
+.ab{
+    text-align: center;
+    text-decoration: underline black;
+     position: relative;
+    top:35px;     
+}
+
+.Abcards{
+    
+    height: 200px;
+    width:96%;
+    position:absolute;
+    top:600px;
+    left: 20px;
+
+    transition: transform 2s;
+    text-align: center;
+
+}
+
+.Abitems-card{
+    float: left;
+    height: 200px;
+    width:300px;
+    margin: 35px 50px;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 1s;
+}
+
+.Abitems-card img{
+    border: 1px solid black;
+    border-radius: 5px;   
+}
+
+
+.Abitems-card:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 6px 7px gray;
+}
+
+
+.ff{
+    background-color: rgba(0, 0, 0, 0.7);
+     height: 300px;
+    width: 100%;
+    position:absolute;
+    top:1100px;
+    display: flex;
+   
+    
+}
+
+.fff{
+    background-color: rgba(0, 0, 0, 0.7);
+     height: 300px;
+    width: 100%;
+    position:absolute;
+    top:750px;
+    display: flex;
+   
+    
+}
+
+.Vgcards{
+    
+    height: 300px;
+    width:96%;
+    position:absolute;
+    top:100px;
+    left: 20px;
+    
+    transition: transform 2s;
+    text-align: center;
+
+}
+
+.Vgitems-card{
+    float: left;
+    height:230px;
+    width:300px;
+    margin: 35px 50px;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 1s;
+    border: 1px solid black;
+    border-radius:8px;
+}
+
+.Vgitems-card img{
+    border: 1px solid black;
+    border-radius: 5px;   
+}
+
+
+.Vgitems-card:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 6px 7px gray;
+}
+
+
+.btn{
+    padding: 8px 15px;
+
+}
+
+button{
+    margin:10px;
+    cursor:pointer;
+    font-weight:bold;
+    border-radius:6px;
+    background:yellow;
+}
+
+button:hover{
+    background:aqua;
+}
+
+
+.container{
+    height: 500px;
+    width: 1200px;
+    display: flex;
+    position: relative;
+    top:90px;
+    
+}
+.content{
+    height: 500px;
+    width: 900px;
+    display: block;
+   text-align: right;
+   cursor: pointer;
+}
+::placeholder{
+
+    padding-left:10px;
+}
+
+
+.content span{
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.content input{
+    width: 400px;
+    height: 30px;
+    
+    font-size:15px;
+   border:2px solid green;
+}
+.btnn{
+    width: 500px;
+    height: 40px;
+    font-size: 20px;
+    
+}
+
+ #name{
+    
+    width:400px; 
+    height:100px;
+    border-radius: 8px;
+    font-size:20px;
+}
+.content1{
+    text-align: right;
+    cursor: pointer;
+}
+.content1 input{
+
+    width: 400px;
+    height: 30px;
+    border: 2px solid green;
+    
+}
+
+.content1 span{
+    font-size: 20px;
+}
+
+.content2{
+    border: 1px solid black;
+    height: 500px;
+    width: 600px;
+    margin-left: 50px;
+}
+
+.head{
+    text-align: center;
+    position: relative;
+    top:40px;
+}
+
+
+
+@media(max-width:300px){
+  
+    .ham{
+    
+        display: block;
+    }
+    .navbar{
+        display: none;
+    }
+         .navbar ul{
+            display: table;
+        
+        } 
+   .cross{
+       position: relative;
+       display: block;
+   }
+    .hamcross{
+        padding-top: 15px;
+        display:flex;
+        padding-left: 10px;
+        padding-right: 10px;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+        .navbar ul li{
+        width:300px;
+      
+    }
+    
+    
+
+    .banner{
+        animation: small 6s linear infinite;
+        width: 3700px;
+    }
+    .banner img{
+        width:500px;
+        height: 150px;
+        background-size: cover;
+        
+    }     
+    @keyframes small {
+                0%{
+                    left:-500px;
+                }
+                   10%{
+                    left:-1020px;
+                   } 
+
+                   20%{
+                       left:-1020px;
+                   }
+
+                   30%{
+                       left:-1520px;
+                   }
+                   40%{
+                       left:-1520px;
+                   }
+                   50%{
+                       left:-2020px;
+                   }
+
+                   60%{
+                       left:-2020px;
+                   }
+                   70%{
+                       left:-2520px;
+                   }
+                   80%{
+                       left:-2520px;
+                    }
+                    90%{
+                        left:-3020px;
+                    }            
+                    95%{
+                        left:-3020px;
+                    }       
+                    100%{
+                        left:-3520px;
+                    }
+            }
+
+
+
+            .cards{
+                position: relative;
+                top:20px;
+            }
+
+            .cards h1{
+                font-size: 20px;
+            }
+
+            .items-card {
+                position: relative;
+                right: 30px;
+                width: 250px;
+                height: 200px;
+            }
+
+            .items-card img{
+                width: 250px;
+
+            }
+
+               
+                    footer{
+                        position: relative;
+                        top:100px;
+                        height: 900px;
+                        display: inline-block;
+                        width: 100%;
+                       
+                    }
+
+
+                    .home{
+                        
+                        width: 100%;
+                    }
+
+                    .about{
+                        text-align: center;
+                        width: 100%;
+                    }
+                    .address{
+                        width: 100%;
+                    }
+
+                    .map{
+                        width: 230px;
+                        height: 230px;
+                        margin-left: 20px;
+                    }
+
+                    #preloader{
+                        position: relative;
+                        left: 10px;
+                        top:20px;
+                    }
+                    .Abcards{
+                       position: relative;
+                       top:150px;
+                        
+                   }
+                    .Abitems-card {
+                  position: relative;
+                    right: 70px;
+                   }
+                    
+                   
+                    .ff{
+                        position: relative;
+                        top:150px;
+                        height: 900px;
+                        display: inline-block;
+                        width: 100%;
+                       
+                    }
+
+
+                    .home{
+                        
+                        width: 100%;
+                    }
+
+                    .about{
+                        text-align: center;
+                        width: 100%;
+                    }
+                    .address{
+                        width: 100%;
+                    }
+
+                    .map{
+                        width: 230px;
+                        height: 230px;
+                        margin-left: 20px;
+                    }
+
+                }
+
+                
